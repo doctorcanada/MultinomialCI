@@ -13,7 +13,7 @@
       den=ppois(a,lambda);
    }
    mu=mat.or.vec(4,1); 
-   # mom es global y se usa fuera de esta función
+   # mom es global y se usa fuera de esta funciÃ³n
    mom=mat.or.vec(5,1); 
    for(r in 1:4){
       poisA=0;
@@ -59,8 +59,7 @@
    z=(n-s1)/sqrt(s2);
    g1=s3/(s2^(3/2));
    g2=s4/(s2^2);
-   poly=1+g1*(z^3-3*z)/6+g2*(z^4-6*z^2+3)/24
-         +g1^2*(z^6-15*z^4+45*z^2-15)/72;
+   poly=1+g1*(z^3-3*z)/6+g2*(z^4-6*z^2+3)/24+g1^2*(z^6-15*z^4+45*z^2-15)/72;
    f=poly*exp(-z^2/2)/(sqrt(2)*gamma(0.5));
    probx=1;
    for(i in 1:k){
